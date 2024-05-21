@@ -1,16 +1,12 @@
-# This is a sample Python script.
+import utils.math_functions as mf
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+mf.add(1, 2)
+mf.subtract(1, 2)
 
+import getpass
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+pwd = getpass.getpass(prompt='Enter the password')
+if pwd == 'Admin':
+    print('Unlock!')
+else:
+    print('You entered wrong password')
